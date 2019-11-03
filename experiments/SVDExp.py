@@ -36,7 +36,7 @@ class SVDExp:
         data = svd.fit_transform(dataX)
         print('After SVD')
         print(data)
-        plot_pca(data, dataY, [0, 1], 'SVD Dimension Output', self.prefix)
+        plot_pca(data, dataY, 'SVD Dimension Output', self.prefix)
         return data               
 
 

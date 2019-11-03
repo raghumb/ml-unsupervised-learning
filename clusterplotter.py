@@ -6,7 +6,7 @@ import numpy as np
 from matplotlib.mlab import PCA as mlabPCA
 from matplotlib import pyplot as plt
 
-
+# Referrred fr0m https://stackoverflow.com/questions/26645642/plot-multi-dimension-cluster-to-2d-plot-python
 def get_colors(num_colors):
     """
     Function to generate a list of randomly generated colors
@@ -29,7 +29,7 @@ def get_colors(num_colors):
         random_colors.append(colors[random.randint(0, len(colors) - 1)])
     return random_colors
 
-
+# Referrred fr0m https://stackoverflow.com/questions/26645642/plot-multi-dimension-cluster-to-2d-plot-python
 def random_centroid_selector(total_clusters , clusters_plotted):
     """
     Function to generate a list of randomly selected
@@ -44,7 +44,7 @@ def random_centroid_selector(total_clusters , clusters_plotted):
         random_list.append(random.randint(0, total_clusters - 1))
     return random_list
 
-
+# Referrred fr0m https://stackoverflow.com/questions/26645642/plot-multi-dimension-cluster-to-2d-plot-python
 def plot_cluster(kmeansdata, centroid_list, label_list , num_cluster, title, prefix):
     """
     Function to convert the n-dimensional cluster to 
@@ -93,7 +93,7 @@ def plot_cluster(kmeansdata, centroid_list, label_list , num_cluster, title, pre
             i = i + 1
     return
 
-
+# Referrred fr0m https://stackoverflow.com/questions/26645642/plot-multi-dimension-cluster-to-2d-plot-python
 def plot_cluster_wo_centroid(kmeansdata, label_list , num_cluster, title, prefix):
     """
     Function to convert the n-dimensional cluster to 
@@ -138,7 +138,7 @@ def plot_cluster_wo_centroid(kmeansdata, label_list , num_cluster, title, prefix
     return    
 
 
-
+# Referred from https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html
 def draw_vector(v0, v1, ax=None):
     ax = ax or plt.gca()
     arrowprops=dict(arrowstyle='->',
@@ -146,7 +146,7 @@ def draw_vector(v0, v1, ax=None):
                     shrinkA=0, shrinkB=0)
     ax.annotate('', v1, v0, arrowprops=arrowprops)
 
-
+# Referred from https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html
 def plot_pca_vector(X , pca):
     plt.scatter(X[:, 0], X[:, 1], alpha=0.2)
     for length, vector in zip(pca.explained_variance_, pca.components_):

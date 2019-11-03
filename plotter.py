@@ -245,6 +245,7 @@ def plot_pca_old(X_pca, dataY, labels, title, prefix):
     plt.savefig('images/'+ title + '.png')
     plt.clf() 
 
+# Referrred fr0m https://stackoverflow.com/questions/26645642/plot-multi-dimension-cluster-to-2d-plot-python
 def plot_pca(X_pca, dataY, title, prefix):
     data_ids = range(len(dataY))
     print('labels')
