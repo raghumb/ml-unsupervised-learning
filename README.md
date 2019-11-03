@@ -44,3 +44,5 @@ References:
 11.	P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
 Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009. (Retrieved from https://archive.ics.uci.edu/ml/datasets/wine+quality)
 12.	[Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014 (Retrieved from https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+
+13. https://github.com/scikit-learn/scikit-learn/blob/1495f69242646d239d89a5713982946b8ffcf9d9/sklearn/decomposition/base.py#L135-L159

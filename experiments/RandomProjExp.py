@@ -16,6 +16,7 @@ class RandomProjExp:
         self.experiment_1()
         self.experiment_best_pca_wine()
 
+    #Referred from https://github.com/scikit-learn/scikit-learn/blob/1495f69242646d239d89a5713982946b8ffcf9d9/sklearn/decomposition/base.py#L135-L159
     def experiment_cluster_size(self, dataX, prefix):
         K = range(3,15)
         X = dataX
